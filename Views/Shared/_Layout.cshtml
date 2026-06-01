@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+   
+  
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="FreerunZufuss.Web" />
+    <title>@ViewData["Title"] - FreerunZufuss.Web</title>
+    <link rel="shortcut icon" href="~/images/ikona.ico" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" /> <!-- Tento element jsme přidali -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @await RenderSectionAsync("CSS", required: false)
+</head>
+
+
+
+<body>
+ 
+    <header>
+        <div id="logo">
+            <h1>Freerun<span>Zufuss</span>.Web</h1>
+            <small>pohyb+sranda</small>
+
+            
+        </div>
+        <nav>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Domů</a></li>
+               
+                <li><a asp-controller="Trips" asp-action="Index">Výleti</a></li>
+             
+                <li><a asp-controller="Home" asp-action="Contribution">Přispěvek</a></li>
+                
+                <li><a class="kontakt-tlacitko" asp-controller="Home" asp-action="Contact">Kontakt</a></li>
+
+                
+
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+       
+            <header>
+                <h1>@ViewData["Title"]</h1>
+            </header>
+
+            <section>
+                @RenderBody()
+            </section>
+        </article>
+    </main>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2026 - FreerunZufuss.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

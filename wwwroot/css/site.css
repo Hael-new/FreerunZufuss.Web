@@ -1,0 +1,262 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+
+
+
+h1, h2 {
+    text-align: center;
+    color: #0a294b;
+    font-size: 1.7em;
+    text-shadow: 3px 3px 7px #666666;
+}
+
+.centrovany {
+    text-align: center;
+}
+
+.skopina {
+    float: right;
+    width:400px;
+    padding-left: 50px;
+    
+}
+
+.avatar {
+    float: right;
+    width: 300px;
+    padding-left: 10px;
+    filter: grayscale(1);
+}
+
+.cistic {
+    clear: both;
+}
+
+.reference-tlacitko {
+    background: #70B73A;
+    color: white;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px 0 25px 0;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    font: 14px "Poppins";
+    background: #f9f9f9;
+    color: #414042;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 100px 0 0 0;
+    min-width: 960px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+
+body > header {
+    height: 100px;
+    width: 100%;
+    background: #00386B;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+#logo {
+    height: 40px;
+    margin: auto 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('../images/logo.png') no-repeat;
+    background-size: 40px 40px;
+}
+
+    #logo > * {
+        margin: 0 0 0 50px;
+    }
+
+    #logo h1 {
+        font-weight: normal;
+        font-size: 1.5em;
+        line-height: 1.2em;
+        color: white;
+    }
+
+        #logo h1 span {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+    #logo small {
+        text-transform: uppercase;
+        font-size: 0.85em;
+    }
+
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+    nav ul li {
+        padding: 0 25px;
+        margin: 0 5px;
+        font-size: 1em;
+        line-height: 4.3em;
+    }
+
+    nav ul a {
+        color: white;
+        padding: 8px 0;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+        nav ul a:hover, .aktivni a {
+            border-bottom: 2px solid #EF6534;
+            background-color: #70B73A;
+        }
+
+.běh-tlacitko {
+    background: #EF6534;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.vylet-tlacitko {
+    background: #EF6534;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.kontakt-tlacitko {
+    background: #EF6534;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+    .běh-tlacitko:hover,
+    .kontakt-tlacitko:hover,
+    .vylet-tlacitko:hover {
+        filter: brightness(115%) contrast(85%);
+        border: 0px;
+    }
+
+html {
+    background: #414042;
+}
+
+footer {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 50px 0;
+    margin-top: auto;
+    color: white;
+    background: #0094ff;
+    clip-path: polygon(0 50px, 100% 0, 100% 105%, 0 105%);
+}
+
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+article {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 50px 50px 10px 50px;
+}
+
+client {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 50px 50px 10px 50px;
+}
+
+.vlevo {
+    float: left;
+}
+
+#vylet img {
+    border: 5px solid#ff6a00;
+    padding: 20px;
+    box-shadow: 3px 3px 6px #999999;
+    margin-right: 6px;
+}
+
+#reference video {
+    border: 5px solid gray;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #999999;
+    margin-right: 10px;
+}
+
+a:hover {
+    color: currentColor;
+}
+
+.běh-tlacitko,
+{
+    background: #00386B;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 15px 0;
+    border-radius: 20px;
+    border: 0;
+}
+
+
+}
+    .kontakt-tlacitko:hover,
+    .vylet-tlacitko:hover,
+    .běh-tlacitko:hover,
+    color: white;
+    filter: brightness(115%) contrast(85%);
+    border: 0;
+}
+
+.clanek-odkaz {
+    text-decoration: none;
+    color: #00386B;
+}
+
+.klienti-odkaz {
+    text-decoration: none;
+    color: #00386B;
+}
